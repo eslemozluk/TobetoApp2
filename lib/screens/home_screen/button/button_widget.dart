@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:tobeto_app/screens/home_screen/button/Styled_Button.dart';
 
+import 'package:tobeto_app/screens/home_screen/button/button_sayfa/announcement.dart';
+import 'package:tobeto_app/screens/home_screen/button/button_sayfa/applications.dart';
+import 'package:tobeto_app/screens/home_screen/button/button_sayfa/education.dart';
+import 'package:tobeto_app/screens/home_screen/button/button_sayfa/questionnaire.dart';
+
 class ButtonWidget extends StatefulWidget {
   const ButtonWidget({
     Key? key,
@@ -15,38 +20,10 @@ class _ButtonWidgetState extends State<ButtonWidget> {
 
   // Farklı içerikte bilgi container'larını saklayan bir liste
   List<Widget> infoContainers = [
-    Container(
-      width: double.infinity,
-      height: 200,
-      color: Colors.white,
-      child: Center(
-        child: Text("Başvurularım Detay"),
-      ),
-    ),
-    Container(
-      width: double.infinity,
-      height: 200,
-      color: Colors.blue,
-      child: Center(
-        child: Text("Eğitimlerim Detay"),
-      ),
-    ),
-    Container(
-      width: double.infinity,
-      height: 200,
-      color: Colors.green,
-      child: Center(
-        child: Text("Duyuru ve Haberlerim Detay"),
-      ),
-    ),
-    Container(
-      width: double.infinity,
-      height: 200,
-      color: Colors.orange,
-      child: Center(
-        child: Text("Anketlerim Detay"),
-      ),
-    ),
+    Applications(),
+    Education(),
+    Announcement(),
+    Questionnaire(),
   ];
 
   @override
@@ -104,7 +81,6 @@ class _ButtonWidgetState extends State<ButtonWidget> {
             ),
           ),
         ),
-        // Farklı içerikteki bilgi container'ını göster
         Padding(
           padding: const EdgeInsets.all(16.0),
           child: infoContainers[currIndex],
