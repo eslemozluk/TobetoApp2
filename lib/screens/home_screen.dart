@@ -11,8 +11,6 @@ import 'package:tobeto_app/screens/home_screen/welcome_text.dart';
 import 'package:tobeto_app/widgets/drawer/comp_drawer.dart';
 import 'package:tobeto_app/widgets/speed_dial/SpeedDialWidget.dart';
 
-
-
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -55,15 +53,17 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       endDrawer: const CompDrawer(),
       floatingActionButton: buildSpeedDial(context),
-      
       body: ListView(
-        children: [
+        children: const [
           WelcomeText(), //1
           CustomSearchBar(), //2
 
           BuildBanner(), //3
           ButtonWidget(), //4
           Example(),
+          SizedBox(
+            height: 30,
+          ),
           GradientCardList(), //5
           Footer(), //5
         ],
