@@ -17,15 +17,40 @@ class Applications extends StatelessWidget {
                 color: const Color.fromARGB(255, 255, 255, 255),
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: Padding(
-                padding: EdgeInsets.only(top: 12, left: 18),
-                child: Text(
-                  "İstanbul Kodluyor\nBilgilendirme",
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyLarge
-                      ?.copyWith(fontWeight: FontWeight.w800),
-                ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 23, top: 18),
+                    child: Text(
+                      "İstanbul Kodluyor\nBilgilendirme",
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyLarge
+                          ?.copyWith(fontWeight: FontWeight.w800),
+                    ),
+                  ),
+                  ListTile(
+                    leading: const Icon(
+                      Icons.done_outline_rounded,
+                      color: Color.fromARGB(255, 188, 225, 184),
+                    ),
+                    title: Text(
+                      "İstanbul Kodluyor Başvuru Formu\nonaylandı.",
+                      style: Theme.of(context).textTheme.bodyMedium,
+                    ),
+                  ),
+                  ListTile(
+                    leading: const Icon(
+                      Icons.done_outline_rounded,
+                      color: Color.fromARGB(255, 188, 225, 184),
+                    ),
+                    title: Text(
+                      "İstanbul Kodluyor Belge Yükleme\nFormu onaylandı..",
+                      style: Theme.of(context).textTheme.bodyMedium,
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
