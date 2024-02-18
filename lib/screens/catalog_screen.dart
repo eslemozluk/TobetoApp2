@@ -2,11 +2,11 @@ import 'package:tobeto_app/widgets/drawer/comp_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:tobeto_app/widgets/speed_dial/SpeedDialWidget.dart';
 
-
 class CatalogScreen extends StatefulWidget {
   const CatalogScreen({Key? key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _CatalogScreenState createState() => _CatalogScreenState();
 }
 
@@ -37,11 +37,7 @@ class _CatalogScreenState extends State<CatalogScreen> {
       ),
       endDrawer: const CompDrawer(),
       floatingActionButton: buildSpeedDial(context),
-      body: Container(
-        child: Text("katalog"),
-        // Sayfanın içeriğini buraya ekleyebilirsin
-      ),
-       
+      body: const Text("katalog"),
     );
   }
 }

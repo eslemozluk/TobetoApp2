@@ -72,24 +72,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - "assets/image/tobeto-logo.png"
-    - "assets/image/kodlama.png"
-    - "assets/image/color-bacground.png"
-    - "assets/image/tobeto-white-logo.png"
-    - "assets/image/apple_logo.png"
-    - "assets/image/google_logo.png"
-    - "assets/image/pattern.png"
-    - "assets/image/kullanici.png"
-    - assets/image/converted.png
-    - assets/image/tobeto-logo_beyaz_2.png
-    - assets/image/tobeto_1.png
-    - assets/image/tobeto_2.png
-    - assets/image/tobeto_3.png
-    - assets/image/banner_1.png
-    - assets/image/Ecmel_Ayral.png
-    - assets/image/istanbul_kodluyor.png
-    - assets/image/anket.png
-    - assets/image/duyuru.png
+    - "assets/image/"
     
 
+ 
  
