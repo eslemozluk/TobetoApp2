@@ -226,7 +226,6 @@ class _ReviewsScreenState extends State<ReviewsScreen> {
                         ElevatedButton(
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
-                            primary: Theme.of(context).colorScheme.primary,
                             minimumSize: Size(
                               MediaQuery.of(context).size.width * 0.6,
                               MediaQuery.of(context).size.height * 0.04,
