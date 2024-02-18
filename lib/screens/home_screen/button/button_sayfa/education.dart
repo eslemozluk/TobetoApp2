@@ -20,7 +20,7 @@ class Education extends StatelessWidget {
             outlinedButton: () {},
           ),
         ),
-        SizedBox(width: 10),
+        const SizedBox(width: 10),
         Expanded(
           child: EducationDetail1(
             image: const AssetImage("assets/image/istanbul_kodluyor.png"),
@@ -30,7 +30,8 @@ class Education extends StatelessWidget {
           ),
         ),
         IconButton(
-            onPressed: () {}, icon: Icon(Icons.arrow_forward_ios_rounded)),
+            onPressed: () {},
+            icon: const Icon(Icons.arrow_forward_ios_rounded)),
       ],
     );
   }

@@ -27,7 +27,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     void singUserIn() {
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => HomeScreen()));
+          .push(MaterialPageRoute(builder: (context) => const HomeScreen()));
     }
 
     return Scaffold(
@@ -82,7 +82,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       InkWell(
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => ForgotPassword()));
+                              builder: (context) => const ForgotPassword()));
                         },
                         child: Text(
                           "Şifremi Unuttum",

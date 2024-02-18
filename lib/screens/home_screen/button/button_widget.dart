@@ -12,6 +12,7 @@ class ButtonWidget extends StatefulWidget {
   }) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _ButtonWidgetState createState() => _ButtonWidgetState();
 }
 
@@ -20,10 +21,10 @@ class _ButtonWidgetState extends State<ButtonWidget> {
 
   // Farklı içerikte bilgi container'larını saklayan bir liste
   List<Widget> infoContainers = [
-    Applications(),
-    Education(),
-    Announcement(),
-    Questionnaire(),
+    const Applications(),
+    const Education(),
+    const Announcement(),
+    const Questionnaire(),
   ];
 
   @override

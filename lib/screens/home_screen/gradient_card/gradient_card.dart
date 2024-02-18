@@ -22,7 +22,7 @@ class GradientCard extends StatelessWidget {
       width: MediaQuery.of(context).size.width * 0.9,
       height: MediaQuery.of(context).size.height * 0.22,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           topRight: Radius.circular(30),
           bottomLeft: Radius.circular(30),
           bottomRight: Radius.circular(30),
