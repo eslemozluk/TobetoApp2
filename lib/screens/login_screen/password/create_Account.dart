@@ -15,7 +15,7 @@ class _CreateAccountState extends State<CreateAccount> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 80,
             ),
             Container(

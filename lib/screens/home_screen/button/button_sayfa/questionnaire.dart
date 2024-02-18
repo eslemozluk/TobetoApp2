@@ -10,8 +10,8 @@ class Questionnaire extends StatelessWidget {
       height: 200,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: Color.fromARGB(255, 232, 229, 229),
-        image: DecorationImage(
+        color: const Color.fromARGB(255, 232, 229, 229),
+        image: const DecorationImage(
             image: AssetImage(
               "assets/image/anket.png",
             ),

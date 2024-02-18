@@ -66,7 +66,7 @@ class Applications extends StatelessWidget {
                 bottomLeft: Radius.circular(5.0),
               ),
             ),
-            padding: EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(8.0),
             child: Text(
               " Kabul Edildi      ",
               style: Theme.of(context)
