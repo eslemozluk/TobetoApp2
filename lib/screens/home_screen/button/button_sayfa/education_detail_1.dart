@@ -48,14 +48,14 @@ class EducationDetail1 extends StatelessWidget {
               padding: const EdgeInsets.only(left: 5),
               child: OutlinedButton(
                   onPressed: outlinedButton,
-                  child: Text("Eğitime Git"),
+                  child: const Text("Eğitime Git"),
                   style: OutlinedButton.styleFrom(
                     side: const BorderSide(width: 0),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
                     minimumSize: const Size(10, 15),
-                    backgroundColor: Color.fromARGB(255, 251, 248, 248),
+                    backgroundColor: const Color.fromARGB(255, 251, 248, 248),
                   )),
             )
           ],

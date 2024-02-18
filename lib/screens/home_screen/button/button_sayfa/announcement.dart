@@ -11,7 +11,7 @@ class Announcement extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color.fromARGB(255, 255, 255, 255),
         borderRadius: BorderRadius.circular(10),
-        image: DecorationImage(
+        image: const DecorationImage(
             image: AssetImage("assets/image/duyuru.png"), fit: BoxFit.cover),
       ),
       child: TextButton(

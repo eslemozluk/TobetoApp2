@@ -18,6 +18,6 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: lightMode,
         darkTheme: darkMode,
-        home: InfoScreen());
+        home: const InfoScreen());
   }
 }
