@@ -9,6 +9,7 @@ import 'package:tobeto_app/screens/home_screen/gradient_card/gradient_card_list.
 import 'package:tobeto_app/screens/home_screen/welcome_text.dart';
 
 import 'package:tobeto_app/widgets/drawer/comp_drawer.dart';
+import 'package:tobeto_app/widgets/register_form.dart';
 import 'package:tobeto_app/widgets/speed_dial/SpeedDialWidget.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -19,7 +20,10 @@ class HomeScreen extends StatefulWidget {
   _HomeScreenState createState() => _HomeScreenState();
 }
 
+bool _isLogin = true;
+
 class _HomeScreenState extends State<HomeScreen> {
+  Widget formWidget = _isLogin ? HomeScreen() : RegisterForm();
   int? selectedIndex;
   bool showInfoContainer = false;
   bool showshowInfoContainerTwo = false;

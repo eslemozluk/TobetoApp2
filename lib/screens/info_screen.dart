@@ -10,7 +10,7 @@ class InfoScreen extends StatefulWidget {
 }
 
 class _InfoScreenState extends State<InfoScreen> {
-  PageController _pageController = PageController(initialPage: 0);
+  final PageController _pageController = PageController(initialPage: 0);
   int currentPage = 0;
 
   @override
@@ -56,8 +56,8 @@ class _InfoScreenState extends State<InfoScreen> {
               child: ElevatedButton(
                 onPressed: () {
                   // Butona tıklandığında yapılacak işlemler
-                  Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => const LoginScreen()));
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => LoginScreen()));
                 },
                 child: const Text("Hemen Başla"),
               ),
